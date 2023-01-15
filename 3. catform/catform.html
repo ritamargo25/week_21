@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required:valid {
+            border-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="formElem">
+        <fieldset>
+            <legend>Имя</legend>
+            <div>
+                <input type="text" id="namecat" placeholder="Кличка питомца" required />*
+            </div>
+            <div>
+                <input type="text" id="nameowner" placeholder="Имя владельца" required />*
+            </div>
+            <div>
+                <input type="tel" id="phone" placeholder="Контакты владельца"
+                    pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10"
+                    maxlength="20" required />*
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Порода</legend>
+            <div>
+
+                <select id="breed">
+                    <option value="first option">выберите породу</option>
+                    <option>Абиссинская</option>
+                    <option>Бенгальская</option>
+                    <option>Британская</option>
+                    <option>Манчкин</option>
+                    <option>Мейн-кун</option>
+                    <option>Метис</option>
+                    <option>Ориентальная</option>
+                    <option>Русская голубая</option>
+                    <option>Сиамская</option>
+                    <option>Сибирская</option>
+                    <option>Сфинкс</option>
+                    <option>Шотландская вислоухая</option>
+                </select>
+            </div>
+            <div>
+                <input type="text" id="text" placeholder="свой вариант" />
+            </div>
+            <div>
+                <label for="sex">Пол</label>
+                <br>
+                Самец <input type="radio" name="sex" /> Самка <input type="radio" name="sex" /> Не знаю <input
+                    type="radio" name="sex" />
+            </div>
+            <div>
+                <label for="age">Возраст (лет)</label>
+                <input type="number" max=30 min=1 />
+            </div>
+        </fieldset>
+        <div>
+            <br>
+            <label for="food">Чем питается?</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Сухой корм" />
+            <label for="text">Сухой корм</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Влажный корм" />
+            <label for="text">Влажный корм</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Натуральный корм" />
+            <label for="text">Натуральный корм</label>
+        </div>
+        <input type="text" name="food" placeholder="свой вариант" />
+        <br>
+        <label for="text">Комментарий владельца</label><br>
+        <textarea name="comments" id="comments" rows="5" cols="20"
+            placeholder="Если хотите добавить что-то важное, можно написать здесь"></textarea>
+        <div>
+            <br>
+            <label for="photo">Приложите фото питомца</label>
+            <input type="file" />
+        </div>
+        <div>
+            <br>
+            <button id="postButton">Сохранить</button>
+        </div>
+    </form>
+    <script src="/3. catform/catform.js"></script>
+</body>
+
+</html>

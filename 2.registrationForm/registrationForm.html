@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<div>
+    <h1>Регистрация</h1>
+    <form>
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" id="name" required />*
+        </div>
+
+        <div>
+            <label for="fio">Фамилия</label>
+            <input type="text" id="fio" required />*
+        </div>
+        <div>
+            <label for="login">Придумайте логин</label>
+            <input type="text" id="login" required />*
+        </div>
+        <fieldset>
+            <legend>Пароли</legend>
+            <div>
+                <label for="current-password">Придумайте пароль</label>
+                <input type="password" id="current-password" required />*
+            </div>
+            <div>
+                <label for="current-password2">Повторите пароль</label>
+                <input type="password" id="current-password2" required />*
+        </fieldset>
+</div>
+<label for="phone">Номер мобильного телефона</label>
+<input type="tel" id="phone" required />*
+</div>
+<br>
+<label for="name">Укажите ваш пол</label><br />
+Женский <input type="radio" name="sex" /> <br /> Мужской <input type="radio" name="sex" />
+</div>
+<div>
+    <button id="postButton">Зарегистрироваться</button>
+</div>
+<div>Нажимая кнопку "Зарегистрироваться"
+    <input type="checkbox" required>* Я принимаю условия <a href="...">Пользовательское соглашение</a>
+</div>
+</form>
+<script src="/2.registrationForm/registrationForm.js"></script>
+</body>
+
+</html>
